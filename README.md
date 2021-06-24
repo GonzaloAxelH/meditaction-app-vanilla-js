@@ -1,1 +1,0 @@
-# meditaction-app-vanilla-js
