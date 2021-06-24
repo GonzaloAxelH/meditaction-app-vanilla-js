@@ -1,20 +1,22 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s all;
 }
-
+body{ 
+  overflow: hidden;
+}
 main{
   display: flex;
   min-height: 100vh;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
 }
 
 video{  
   width: 100%;
   height: auto;
-  overflow: hidden;
 }
 .video{ 
   z-index: -1;
@@ -34,3 +36,44 @@ video{
     justify-content: space-around;
     flex-direction: column;
 }
+
+.app__options-time button:hover{
+    transform: scale(1.2);
+}
+
+.app__options-time button{
+  border:2px solid #fff;
+  border-radius: 6px;
+  background:transparent;
+  color:#fff;
+  font-size: 20px;
+  padding: 1em;
+  cursor: pointer;
+}
+.app__select-song button{
+  border:none;
+  cursor:pointer;
+    background:transparent;
+}
+
+.app__select-song button:hover{
+transform:scale(1.2);
+}
+.app__clock{
+    position: relative;
+}
+.app__clock img,
+.app__clock svg{
+    position:absolute;
+}
+.app__clock-time{
+  transform:translateY(110px);   
+  font-size:80px;
+  color:#fff;
+      
+}
+.app__clock-play{
+    cursor: pointer;  
+    transform: scale(1.2);  
+    z-index: 10;
+  }

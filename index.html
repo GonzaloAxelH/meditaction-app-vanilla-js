@@ -1,27 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <div class="video">
-      <video src="./video/beach.mp4" autoplay loop></video>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <div class="video">
+    <video src="./video/rain.mp4" autoplay loop></video>
+  </div>
+  <main>
+    <div class="app__options-time">
+      <button class="btn-2">2 Minutes</button>
+      <button class="btn-5">5 Minutes</button>
+      <button class="btn-10">10 Minutes</button>
     </div>
-    <main>
-      <div class="app__options-time">
-        <button>2 Minutes</button>
-        <button>5 Minutes</button>
-        <button>10 Minutes</button>
+    <div class="app__clock">
+      <img class="app__clock-play" src="./svg/play.svg" alt="">
+      <img src="./svg/replay.svg" alt="">
+      <!-- <img src="./svg/pause.svg" alt=""> -->
+      <svg class="static-outline" width="453" height="453" viewBox="0 0 453 453" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20" />
+      </svg>
+      <svg width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle class="moving-outline" cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20" />
+      </svg>
+      <audio class="app__clock-audio" src="./sounds/beach.mp3"></audio>
+      <div class="app__clock-time">
+        0:00
       </div>
-      <div class="app__clock"></div>
-      <div class="app__select-song">
-        <button></button>
-        <button></button>
-      </div>
-    </main>
-    <script src="./js/app.js" type="module"></script>
-  </body>
+    </div>
+    <div class="app__select-song">
+      <button class="sound-1">
+        <img src="./svg/rain.svg" alt="">
+      </button>
+      <button class="sound-2">
+        <img src="./svg/beach.svg" alt="">
+      </button>
+    </div>
+  </main>
+  <script src="./js/app.js" type="module"></script>
+</body>
+
 </html>
