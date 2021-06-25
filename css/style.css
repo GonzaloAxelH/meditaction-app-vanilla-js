@@ -2,7 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: 0.3s all;
+  transition: 1s;
+}
+svg{
+  transition: 10s all;
 }
 body{ 
   overflow: hidden;
@@ -76,4 +79,8 @@ transform:scale(1.2);
     cursor: pointer;  
     transform: scale(1.2);  
     z-index: 10;
-  }
+}
+
+.moving-outline{
+  background:transparent;
+}
